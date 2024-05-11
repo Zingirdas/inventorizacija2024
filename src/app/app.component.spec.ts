@@ -1,3 +1,4 @@
+
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
@@ -14,16 +15,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'inventorizacija2024' title`, () => {
+  it(`should have the 'inventorizacija' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('inventorizacija2024');
+    expect(app.title).toEqual('inventorizacija');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, inventorizacija2024');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, inventorizacija');
   });
 });
